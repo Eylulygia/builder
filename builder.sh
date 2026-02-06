@@ -9,6 +9,8 @@
 # Build Firmware
 # Copy Kernel and Rootfs to Archive
 # Copy Kernel and Rootfs to TFTP server
+# Force rebuild - cache temizle
+
 
 DEVICE="$1"
 BUILDER_DIR=$(pwd)
