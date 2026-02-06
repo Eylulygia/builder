@@ -143,6 +143,9 @@ copy_extra_packages
 echo_c 33 "\nCopying device files"
 cp -afv ${BUILDER_DIR}/${ITEM}/* ${FIRMWARE_DIR}
 
+echo_c 33 "\nForcing kernel rebuild"
+make linux-dirclean
+
 echo_c 33 "\nBuilding the device"
 make BOARD=${DEVICE}
 
